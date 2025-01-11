@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'norse-bold';
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.container {
+    display: flex;
+}
+
+.logo-sect {
+    background-image: url(./images/halie-west-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    color: #ffffff;
+    width: 33vw;
+    text-align: center;
+}
+
+.odin-logo {
+    display: inline;
+    width: 60px;
+}
+
+.odin-title {
+    font-family: 'norse-bold';
+    display: inline;
+    font-size: 60px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.dark-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.45);
+    position: relative;
+    top: 10rem;
+}
+
+.credits {
+    font-size: 12px;
+    margin: 15px 0;
+}
+.credits > a {
+    color: inherit;
+}
+
+.main-sect {
+    width: calc(100% - 33vw);
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.invite {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 40px;
+    margin-bottom: 3rem;
+}
+
+.invite >p:last-child {
+    margin-top: 20px;
+}
+
+.invite > p {
+    max-width: 50ch;
+}
+
+.light-bg {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 10px 20px 2px rgba(0,0,0,0.1); 
+    box-shadow: 0px 10px 20px 2px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+
+.light-bg > h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    width: 40%;
+    margin: 8px 0;
+}
+
+.form-item > label {
+    display: block;
+    font-size: 10px;
+    color: #0f0f0f;
+    font-weight: 600;
+    letter-spacing: 0.25ch;
+}
+
+input {
+    border: solid 1px gray;
+    border-radius: 2px;
+    outline: none;
+    width: 18vw;
+    margin: 5px 0 0 1px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+input:focus {
+    border: solid 1px blue;
+    -webkit-box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.1); 
+    box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.1);
+}
+
+input[type="password"] {
+    border: solid 1px red;
+}
+
+.buttons {
+    margin-left: 40px;
+}
+
+.create {
+    background-color: #596d48;
+    outline: none;
+    border: 1px solid #596d48;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(0,0,0,0.25); 
+    box-shadow: 0px 5px 20px 2px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.create:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #596d48;
+}
+
+.buttons p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.log-in {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
